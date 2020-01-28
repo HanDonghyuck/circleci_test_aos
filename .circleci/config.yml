@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     #working_directory: ~/code
-    working_directory: ~/circleci_test_aos/Detect_aos_camera-develop
+    working_directory: ~/Detect_aos_camera-develop/
     docker:
       - image: circleci/android:api-25-alpha
     environment:
