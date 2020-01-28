@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- 타이틀 바를 안보이도록 합니다. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="textRegular">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/noto_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_4A4A4A</item>
+    </style>
+
+    <style name="textMedium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/noto_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_4A4A4A</item>
+    </style>
+
+    <style name="textBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/noto_bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_4A4A4A</item>
+    </style>
+
+    <style name="buttonBase">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/mint_bn</item>
+        <item name="android:fontFamily">@font/noto_regular</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="viewBase">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/color_e0e0e0</item>
+    </style>
+</resources>

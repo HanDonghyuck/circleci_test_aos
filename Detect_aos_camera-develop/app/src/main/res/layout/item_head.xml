@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+                name="headItem"
+                type="kr.co.camera.view.item.HeadItem"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/head_tv_right"
+                android:layout_width="0dp"
+                style="@style/textRegular"
+                android:gravity="center"
+                android:text="@{headItem.title}"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+        <!--<View-->
+                <!--android:id="@+id/head_view"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@drawable/circle"-->
+                <!--app:layout_constraintTop_toBottomOf="@id/head_tv_right"-->
+                <!--app:layout_constraintLeft_toLeftOf="parent"-->
+                <!--app:layout_constraintRight_toRightOf="parent"/>-->
+
+        <ImageView
+                android:id="@+id/head_iv_right"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                tools:src="@mipmap/ic_launcher_round"
+                app:loadImageDrawableRes="@{headItem.imageUrl}"
+                app:layout_constraintTop_toBottomOf="@id/head_tv_right"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+                android:id="@+id/head_tv_right_ex"
+                android:layout_width="0dp"
+                style="@style/textRegular"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                tools:text="@string/login002"
+                android:text="@{headItem.example}"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                app:layout_constraintTop_toBottomOf="@id/head_iv_right"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="kr.co.camera.view.CameraActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/include_dk"
+            layout="@layout/include_dk"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--<include-->
+        <!--android:id="@+id/include_ju"-->
+        <!--layout="@layout/include_ju"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+        <TextView
+            android:id="@+id/camera_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="불라불라"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@id/camera_view_preview"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/camera_tv_count_of_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="프리뷰 보이기" />
+
+        <Switch
+            android:id="@+id/camera_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="프리뷰 보이기"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/camera_tv_count_of_picture" />
+
+        <View
+            android:id="@+id/camera_view_preview"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="90dp"
+            android:background="@drawable/camera_background_all"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/camera_cl_preview"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="90dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <View
+                android:id="@+id/camera_view_left_background"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/camera_background_all"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/camera_iv"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/camera_view_right_background"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/camera_background_all"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/camera_iv"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/camera_iv"
+                android:layout_width="150dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@mipmap/ic_launcher"
+                tools:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/camera_iv_white_line"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@drawable/center_line"
+                android:layerType="software"
+                app:layout_constraintBottom_toBottomOf="@id/camera_iv"
+                app:layout_constraintLeft_toLeftOf="@id/camera_iv"
+                app:layout_constraintRight_toRightOf="@id/camera_iv"
+                app:layout_constraintTop_toTopOf="@id/camera_iv" />
+
+            <ImageView
+                android:id="@+id/camera_view_left"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circle_line"
+                android:layerType="software"
+                app:layout_constraintBottom_toBottomOf="@id/camera_iv"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintLeft_toLeftOf="@id/camera_iv"
+                app:layout_constraintRight_toRightOf="@id/camera_iv"
+                app:layout_constraintTop_toTopOf="@id/camera_iv"
+                app:layout_constraintVertical_bias="0.4" />
+
+            <ImageView
+                android:id="@+id/camera_view_right"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circle_line"
+                android:layerType="software"
+                app:layout_constraintBottom_toBottomOf="@id/camera_iv"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintLeft_toLeftOf="@id/camera_iv"
+                app:layout_constraintRight_toRightOf="@id/camera_iv"
+                app:layout_constraintTop_toTopOf="@id/camera_iv"
+                app:layout_constraintVertical_bias="0.4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

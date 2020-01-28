@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+                name="dialog"
+                type="kr.co.camera.view.dialog.HeadDialog"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/head_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+        <!--<View-->
+        <!--android:id="@+id/head_view_1"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/color_D8D8D8"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/head_tv_title"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"/>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/head_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/head_tv_title"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/head_bt_ok"/>
+
+        <!-- region 가운데 선과 양쪽 배경 투명도 주기 위한... -->
+        <View
+                android:id="@+id/head_view_left"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="#22000000"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="@id/head_rv"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/head_view_2"
+                app:layout_constraintBottom_toBottomOf="@id/head_rv"/>
+
+        <View
+                android:id="@+id/head_view_2"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:visibility="invisible"
+                app:layout_constraintTop_toTopOf="@id/head_rv"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/head_rv"/>
+
+        <View
+                android:id="@+id/head_view_right"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="#22000000"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="@id/head_rv"
+                app:layout_constraintLeft_toRightOf="@id/head_view_2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/head_rv"/>
+        <!-- endregion -->
+
+        <!--<View-->
+        <!--android:id="@+id/head_view_3"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/color_D8D8D8"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/head_rv"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"/>-->
+
+        <Button
+                android:id="@+id/head_bt_ok"
+                style="@style/buttonBase"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="34dp"
+                android:onClick="@{() -> dialog.onClickOk()}"
+                app:layout_constraintTop_toBottomOf="@id/head_rv"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

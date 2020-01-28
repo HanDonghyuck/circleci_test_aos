@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Nose Scan</string>
+
+    <string name="toast_wifi">Wifi enabled</string>
+    <string name="toast_mobile">Mobile data enabled</string>
+    <string name="toast_server_error">앗, 예상치 못한 문제가 발생했어요 😢\n잠시후에 다시 실행해주세요</string>
+    <string name="Etc024">네트워크 연결이 지연되고 있습니다.\n네트워크 연결 상태 확인 후 다시 이용해주세요.</string>
+
+    <string name="skip">Skip</string>
+    <string name="start">Start</string>
+    <string name="ok">확인</string>
+    <string name="cancel">취소</string>
+    <string name="next">다음</string>
+    <string name="save">저장</string>
+    <string name="take_picture">촬영</string>
+    <string name="focus">초점</string>
+
+    <string name="back_pressed_message">한번 더 누르면 종료됩니다.</string>
+
+    <string name="head1">단두종</string>
+    <string name="head2">장두종</string>
+    <string name="head1_ex">(불독, 치와와, 시츄 등)</string>
+    <string name="head2_ex">(미니핀, 닥스하운드 등)</string>
+
+    <string name="login000">Nose Scan</string>
+    <string name="login001">강아지 이름을 입력해 주세요</string>
+    <string name="login002">강아지 두상 형태를 선택해 주세요</string>
+    <string name="login003">강아지 리스트</string>
+    <string name="login004">서치 시작</string>
+
+    <string name="result003">참고 이미지</string>
+
+    <string name="search_mode">서치 모드</string>
+
+    <string name="failEntropy">그림자가 지지 않았나요?\n취소를 눌러 다시 촬영해 주세요.</string>
+    <string name="failMct">사진에 흔들림이 있지 않았나요?\n취소를 눌러 다시 촬영해 주세요.</string>
+    <string name="successImage">저장 후 사진첩에서 확인 가능합니다.</string>
+
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+</resources>

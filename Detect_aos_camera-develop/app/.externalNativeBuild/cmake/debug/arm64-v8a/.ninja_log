@@ -1,0 +1,10 @@
+# ninja log v5
+2	1499	0	CMakeFiles/native-lib.dir/detect_image_quality.cpp.o	186a7e42659fca36
+0	1510	0	CMakeFiles/native-lib.dir/native-lib.cpp.o	d2d4ac9c373ef77b
+7	1583	0	CMakeFiles/native-lib.dir/detect_nostrildetection.cpp.o	2ee6e25fff6857e0
+4	1723	0	CMakeFiles/native-lib.dir/detect_verification_mobile.cpp.o	1fe75fe31e45cb20
+1723	2006	0	/Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	b7a69b27fc3effae
+34	2279	0	CMakeFiles/native-lib.dir/detect_verification_mobile.cpp.o	1fe75fe31e45cb20
+2279	2547	0	/Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	b7a69b27fc3effae
+21	1358	0	CMakeFiles/native-lib.dir/detect_verification_mobile.cpp.o	1fe75fe31e45cb20
+1358	1491	0	/Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	b7a69b27fc3effae

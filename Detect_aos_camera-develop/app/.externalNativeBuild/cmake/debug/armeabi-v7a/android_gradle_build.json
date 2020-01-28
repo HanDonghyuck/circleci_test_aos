@@ -1,0 +1,67 @@
+
+{
+	"buildFiles" : 
+	[
+		"/Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/src/main/cpp/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"/Users/kaco/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"lib-opencv-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "lib-opencv",
+			"buildType" : "debug",
+			"output" : "/Users/kaco/Documents/Fitpet/Detect/AndroidProj/Detect_aos_camera/app/src/main/JniLibs/armeabi-v7a/libopencv_java3.so",
+			"toolchain" : "3039964027447484350"
+		},
+		"native-lib-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "native-lib",
+			"buildCommand" : "/Users/kaco/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target native-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/kaco/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/kaco/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I/Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/src/main/cpp/src/main/cpp/include -I/Users/kaco/Documents/Fitpet/Detect/AndroidProj/opencv_build/install/include -isystem /Users/kaco/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/kaco/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/kaco/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/kaco/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=24 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -mfpu=neon -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -fopenmp -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "/Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/kaco/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/kaco/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I/Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/src/main/cpp/src/main/cpp/include -I/Users/kaco/Documents/Fitpet/Detect/AndroidProj/opencv_build/install/include -isystem /Users/kaco/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/kaco/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/kaco/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/kaco/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=24 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -mfpu=neon -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -fopenmp -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/src/main/cpp/detect_image_quality.cpp",
+					"workingDirectory" : "/Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/kaco/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/kaco/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I/Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/src/main/cpp/src/main/cpp/include -I/Users/kaco/Documents/Fitpet/Detect/AndroidProj/opencv_build/install/include -isystem /Users/kaco/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/kaco/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/kaco/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/kaco/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=24 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -mfpu=neon -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -fopenmp -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/src/main/cpp/detect_verification_mobile.cpp",
+					"workingDirectory" : "/Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/kaco/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/kaco/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I/Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/src/main/cpp/src/main/cpp/include -I/Users/kaco/Documents/Fitpet/Detect/AndroidProj/opencv_build/install/include -isystem /Users/kaco/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/kaco/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/kaco/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/kaco/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=24 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -mfpu=neon -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -fopenmp -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/src/main/cpp/detect_nostrildetection.cpp",
+					"workingDirectory" : "/Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so",
+			"toolchain" : "3039964027447484350"
+		}
+	},
+	"toolchains" : 
+	{
+		"3039964027447484350" : 
+		{
+			"cCompilerExecutable" : "/Users/kaco/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/kaco/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}

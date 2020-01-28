@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+                name="activity"
+                type="kr.co.camera.view.CameraActivity"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+                android:id="@+id/camera_sl_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:scale_base_width="768"
+                app:scale_base_height="1024"
+                app:scale_width="768"
+                app:scale_height="1024">
+
+            <View
+                    android:id="@+id/camera_view_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/camera_background_all"
+                    app:scale_width="768"
+                    app:scale_height="410"/>
+
+            <SurfaceView
+                    android:id="@+id/camera_sv_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_width="768"
+                    app:scale_height="1024"/>
+
+            <View
+                    android:id="@+id/camera_view_rect_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/camera_rect_red"
+                    app:scale_width="700"
+                    app:scale_height="203.2"/>
+
+            <View
+                    android:id="@+id/camera_view_focus_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:onClick="@{() -> activity.onClickFocus()}"
+                    app:scale_width="600"
+                    app:scale_height="600"/>
+
+            <!--<ImageView-->
+                    <!--android:id="@+id/camera_view_left_2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layerType="software"-->
+                    <!--android:background="@drawable/circle_line"-->
+                    <!--app:scale_width="50.8"-->
+                    <!--app:scale_height="101.6"-->
+                    <!--app:scale_top="451.04"-->
+                    <!--app:scale_left="306.1"/>-->
+
+            <!--<ImageView-->
+                    <!--android:id="@+id/camera_view_right_2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layerType="software"-->
+                    <!--android:background="@drawable/circle_line"-->
+                    <!--app:scale_width="50.8"-->
+                    <!--app:scale_height="101.6"-->
+                    <!--app:scale_top="451.04"-->
+                    <!--app:scale_left="411.09"/>-->
+
+            <ImageView
+                    android:id="@+id/camera_view_left_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layerType="software"
+                    android:background="@drawable/circle_line"
+                    app:scale_width="50.8"
+                    app:scale_height="50.8"
+                    app:scale_top="476.44"
+                    app:scale_left="306.1"/>
+
+            <ImageView
+                    android:id="@+id/camera_view_right_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layerType="software"
+                    android:background="@drawable/circle_line"
+                    app:scale_width="50.8"
+                    app:scale_height="50.8"
+                    app:scale_top="476.44"
+                    app:scale_left="411.09"/>
+
+            <!--<View-->
+                    <!--android:id="@+id/camera_view_center_2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="@drawable/camera_rect_center"-->
+                    <!--app:scale_width="54.19"-->
+                    <!--app:scale_height="108.37"-->
+                    <!--app:scale_top="451.04"-->
+                    <!--app:scale_left="356.91"/>-->
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/center_line"
+                    android:layerType="software"
+                    app:scale_width="500"
+                    app:scale_height="200"/>
+
+            <View
+                    android:id="@+id/camera_view_eye_left_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/camera_side_circle_white"
+                    app:scale_width="101.6"
+                    app:scale_height="101.6"
+                    app:scale_top="451.04"
+                    app:scale_left="156.1"/>
+
+            <TextView
+                    android:id="@+id/camera_tv_eye_left_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="눈"
+                    android:textColor="@android:color/black"
+                    app:scale_width="101.6"
+                    app:scale_height="101.6"
+                    app:scale_top="451.04"
+                    app:scale_left="156.1"
+                    app:scale_textsize="70"/>
+
+            <View
+                    android:id="@+id/camera_view_eye_right_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/camera_side_circle_white"
+                    app:scale_width="101.6"
+                    app:scale_height="101.6"
+                    app:scale_top="451.04"
+                    app:scale_left="510.3"/>
+
+            <TextView
+                    android:id="@+id/camera_tv_eye_right_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="눈"
+                    android:textColor="@android:color/black"
+                    app:scale_width="101.6"
+                    app:scale_height="101.6"
+                    app:scale_top="451.04"
+                    app:scale_left="510.3"
+                    app:scale_textsize="70"/>
+
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

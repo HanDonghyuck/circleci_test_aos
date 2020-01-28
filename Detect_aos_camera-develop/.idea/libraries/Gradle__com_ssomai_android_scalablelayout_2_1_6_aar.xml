@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ssomai:android.scalablelayout:2.1.6@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d39def4b456a8b08e8dd8939da2850a5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d39def4b456a8b08e8dd8939da2850a5/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ssomai/android.scalablelayout/2.1.6/35315d5a7780215063579b1476610f2209961a22/android.scalablelayout-2.1.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

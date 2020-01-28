@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+                name="activity"
+                type="kr.co.camera.view.SplashActivity"/>
+    </data>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+        <TextView
+                android:id="@+id/splash_tv_title"
+                style="@style/textRegular"
+                android:gravity="center"
+                android:letterSpacing="-0.02"
+                android:includeFontPadding="false"
+                tools:text="@string/login000"
+                android:textSize="48sp"
+                android:textColor="@color/color_33cbda"/>
+
+    </LinearLayout>
+</layout>

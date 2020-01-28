@@ -1,0 +1,3 @@
+/Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/edit_cache.dir
+/Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/rebuild_cache.dir
+/Users/kaco/Documents/Fitpet/Detect/AndroidProj/search_Detect/Detect_aos_camera-develop/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/native-lib.dir

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="kr.co.camera">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+
+        <activity
+            android:name=".view.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".view.intro.IntroActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.CameraActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.intro_camera.IntroCameraActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.result_image.ResultActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.camera.Camera2Activity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".view.pet_list.PetListActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".view.SearchModeActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--<activity android:name=".save_file.SaveFileActivity"-->
+        <!--android:screenOrientation="portrait"/>-->
+
+        <!--<activity android:name=".camera2.CameraActivity2"-->
+        <!--android:screenOrientation="portrait"/>-->
+
+        <!--<activity android:name=".TestActivity"-->
+        <!--android:screenOrientation="portrait"/>-->
+
+        <!--&lt;!&ndash; Network Check &ndash;&gt;-->
+        <!--<receiver-->
+        <!--android:name=".etc.NetworkChangeReceiver"-->
+        <!--android:label="NetworkChangeReceiver">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" tools:ignore="BatteryLife"/>-->
+        <!--<action android:name="android.net.wifi.WIFI_STATE_CHANGED" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+    </application>
+
+</manifest>

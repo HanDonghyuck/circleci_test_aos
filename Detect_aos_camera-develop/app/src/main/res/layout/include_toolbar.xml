@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:gravity="center_horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/toolbar_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/toolbar_tv_title"
+                    style="@style/textMedium"
+                    tools:text="@string/app_name"
+                    android:textSize="22sp"
+                    android:textColor="@color/color_4A4A4A"
+                    android:letterSpacing="-0.02" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/toolbar_rl"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="end"
+                android:visibility="gone"
+                tools:visibility="visible"
+                tools:background="@android:color/black"
+                android:gravity="center_vertical|end">
+
+                <ImageView
+                    android:id="@+id/toolbar_iv_exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/exit"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
