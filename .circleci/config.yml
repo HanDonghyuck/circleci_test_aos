@@ -1,7 +1,8 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/code
+    #working_directory: ~/code
+    working_directory: ~/circleci_test_aos/Detect_aos_camera-develop
     docker:
       - image: circleci/android:api-25-alpha
     environment:
@@ -12,10 +13,10 @@ jobs:
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
       - run:
           name: Chmod permissions #if permission for Gradlew Dependencies fail, use this.
-          command: sudo chmod +x ./gradlew
+          command: sudo chmod +x ./Detect_aos_camera-develop/gradlew
       - run:
           name: Download Dependencies
-          command: ./gradlew androidDependencies
+          command: ./Detect_aos_camera-develop/gradlew androidDependencies
       - save_cache:
           paths:
             - ~/.gradle
