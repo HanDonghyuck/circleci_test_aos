@@ -1,8 +1,7 @@
 version: 2
 jobs:
   build:
-    #working_directory: ~/code
-    working_directory: ~/circleci_test_aos/Detect_aos_camera-develop
+    working_directory: ~/code
     docker:
       - image: circleci/android:api-25-alpha
     environment:
@@ -18,7 +17,7 @@ jobs:
       - run:
           name: Download Dependencies
           #command: ./gradlew androidDependencies
-          command: ./gradlew androidDependencies
+          command: ./Detect_aos_camera-develop/gradlew androidDependencies
       #- save_cache:
       #    paths:
       #      - ~/.gradle
